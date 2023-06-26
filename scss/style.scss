@@ -1,29 +1,112 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+header {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  justify-content: space-between;
+  background: #1C1C1C 0% 0% no-repeat padding-box;
+  width: 1400px;
+  height: 72px;
+  opacity: 1;
+  
+  img {
+    margin-top: 10px;
+    margin-left: 147px;
+    width: 119px;
+    height: 52px;
+  }
+
+  .navigation {
+    margin-top: 26px;
+    margin-right: 147px;
+    overflow: auto
+  }
+
+  .navigation a{
+    text-decoration: none;
+    padding: 20px;
+    letter-spacing: 0px;
+    color: rgb(159, 157, 157);
+    text-align: right;
+    opacity: 1;
+  }
+
+  .navigation a:hover {
+    border-bottom: 3px solid #E27866;
+    width: 64px;
+  }
+  
+  .navigation a.active {
+    border-bottom: 3px solid #E27866;
+    color: white;
+    transition: 0.2s;
+  }
 }
 
-.img {
-  background: url(../images/gulp.png);
-  background-size: contain;
+.section-1 {
+  display: flex;
+  width: 1400px;
+  height: 639px; 
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 150px;
-  width: 75px;
-  animation: spin 5s infinite;
-}
+  background:linear-gradient(0deg, rgba(28, 28, 28,  0.4), rgba(28, 28, 28, 0.4)), url(/images/png/photo-1480714378408-67cf0d13bc1b@2x.png);background-size:cover;
+  position: relative;
+  opacity: 0.9;
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate(180deg) scale(2);
+  img {
+    margin-top: 138px;
+    margin-left: 150px;
+    width: 247px;
+    height: 108px;
   }
 
-  100% {
-    transform: rotate(360deg) scale(1)
+  .divider {
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 84px;
+    height: 22px;
+  }
+
+  h1 {
+    text-align: left;
+    color: white;
+    font-size: 2em;
+    margin-top: 15px;
+    margin-left: 150px;
+    width: 426px;
+    height: 87px;
+  }
+  
+  p {
+    color: white;
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 651px;
+    height: 65px;
+  }
+
+  button {
+    background: transparent;
+    color: white;
+    margin-top: 40px;
+    margin-left: 150px;
+    width: 135px;
+    height: 42px;
+    border: 2px solid #FFFFFF;
+    opacity: 1;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    border-color: #e07964;
+    color: #e07964;
+    cursor: pointer;
   }
 }
