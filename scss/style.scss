@@ -55,7 +55,8 @@ header {
   height: 639px; 
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background:linear-gradient(0deg, rgba(28, 28, 28,  0.4), rgba(28, 28, 28, 0.4)), url(/images/png/photo-1480714378408-67cf0d13bc1b@2x.png);background-size:cover;
+  background:linear-gradient(0deg, rgba(28, 28, 28,  0.76), rgba(28, 28, 28, 0.36)), url(/images/png/photo-1480714378408-67cf0d13bc1b@2x.png);
+  background-size:cover;
   position: relative;
   opacity: 0.9;
 
@@ -91,7 +92,7 @@ header {
     height: 65px;
   }
 
-  button {
+  .button-1 {
     background: transparent;
     color: white;
     margin-top: 40px;
@@ -104,9 +105,209 @@ header {
     transition: 0.3s;
   }
 
-  button:hover {
+  .button-1:hover {
     border-color: #e07964;
     color: #e07964;
     cursor: pointer;
+  }
+}
+
+.form {
+  background: #FFFFFF;
+  margin-top: 130px;
+  margin-left: 75px;
+  width: 360px;
+  height: 425px;
+  border-radius: 5px;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25em;
+    background-color: #F5F5F5;
+    height: 57px;
+    border-radius: 5px 5px 0px 0px;
+
+    span{
+      margin-left: 5px;
+      margin-right: 5px;
+      color: #e07964;
+    }
+  }
+
+  .h3-details {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 220px;
+    height: 40px;
+  }
+
+  input {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 20px;
+    padding-bottom: 5px;
+    padding-left: 0;
+    margin-left: 60px;
+    width: 250px;
+  }
+
+  .button-2 {
+    background: #41D395;
+    border: none;
+    color: white;
+    width: 360px;
+    height: 57px;
+    border-radius: 0 0 5px 5px;
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-top: 25px;
+  }
+
+  .radio-field{
+    margin: 30px 45px 20px 45px;
+
+    .h3-sub {
+      margin-left: 10px;
+    }
+  }
+
+  .radio-btn{
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 5px;
+    width: 10%;
+  }
+}
+
+.section-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  height: 105px;
+
+  h2 {
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 200px;
+    height: 24px;
+  }
+
+  p {
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 420px;
+  }
+
+  .icons {
+    margin-top: 40px;
+    width: 600px;
+    height: 30px;
+    color: #E27866;
+    opacity: 0.65;
+  }
+
+  .icons i {
+    font-size: 32px;
+    width: 100px;
+    height: 50px;
+  }
+}
+
+.section-3 {
+  display: flex;
+  background-size: 100% 100%;
+  background: linear-gradient(270deg, 
+  rgba(102, 150, 226, 0.6), 
+  rgba(226, 120, 102, 0.6)) , url(/images/png/mountains.png);
+  background-size:cover;
+  width: 1400px;
+  height: 595px;
+
+  .explore {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+   margin-right: 0px;
+  }
+
+  #img1 {
+    width: 168px;
+    height: 168px;
+  }
+
+  #img2 {
+    width: 168px;
+    height: 168px;
+  }
+
+  #img3 {
+    width: 335px;
+    height: 175px;
+  }
+
+  .features {
+    color: white;
+    margin-top: 185px;
+    margin-left: 270px;
+    width: 557px;
+    height: 190px;
+  }
+
+  .features h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+
+  .features p {
+    font-size: 0.8em;
+  }
+}
+
+.section-4 {
+  display: flex;
+  background: #1C1C1C;
+  width: 1400px;
+  height: 596px;
+
+  .logo img {
+    margin-top: 213px;
+    margin-left: 210px;
+    width: 389px;
+    height: 169px;
+  }
+
+  h2 {
+    color: white;
+    font-weight: 800;
+    margin-top: 90px;
+    margin-right: 767px;
+    margin-left: 168px;
+    width: 314px;
+    height: 80px;
+  }
+
+  img {
+    margin-top: 15px;
+    margin-left: 168px;
+    width: 200px;
+    height: 2px;
+  }
+
+  p {
+    color: white;
+    margin-top: 20px;
+    margin-left: 168px;
+    width: 451px;
+    height: 58px;
+    letter-spacing: 0px;
+    font-weight: 300;
   }
 }
