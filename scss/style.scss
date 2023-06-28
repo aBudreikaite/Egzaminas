@@ -14,7 +14,7 @@ header {
   width: 1400px;
   height: 72px;
   opacity: 1;
-  
+
   img {
     margin-top: 10px;
     margin-left: 147px;
@@ -28,7 +28,7 @@ header {
     overflow: auto
   }
 
-  .navigation a{
+  .navigation a {
     text-decoration: none;
     padding: 20px;
     letter-spacing: 0px;
@@ -41,7 +41,7 @@ header {
     border-bottom: 3px solid #E27866;
     width: 64px;
   }
-  
+
   .navigation a.active {
     border-bottom: 3px solid #E27866;
     color: white;
@@ -52,11 +52,11 @@ header {
 .section-1 {
   display: flex;
   width: 1400px;
-  height: 639px; 
+  height: 639px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background:linear-gradient(0deg, rgba(28, 28, 28,  0.76), rgba(28, 28, 28, 0.36)), url(/images/png/photo-1480714378408-67cf0d13bc1b@2x.png);
-  background-size:cover;
+  background: linear-gradient(0deg, rgba(28, 28, 28, 0.76), rgba(28, 28, 28, 0.36)), url(/images/png/photo-1480714378408-67cf0d13bc1b@2x.png);
+  background-size: cover;
   position: relative;
   opacity: 0.9;
 
@@ -83,7 +83,7 @@ header {
     width: 426px;
     height: 87px;
   }
-  
+
   p {
     color: white;
     margin-top: 10px;
@@ -129,7 +129,7 @@ header {
     height: 57px;
     border-radius: 5px 5px 0px 0px;
 
-    span{
+    span {
       margin-left: 5px;
       margin-right: 5px;
       color: #e07964;
@@ -169,19 +169,46 @@ header {
     margin-top: 25px;
   }
 
-  .radio-field{
+  .radio-field {
     margin: 30px 45px 20px 45px;
 
     .h3-sub {
       margin-left: 10px;
+      margin-bottom: 20px;
     }
   }
 
-  .radio-btn{
+  .radio-btn {
+    accent-color: #41D395;
     display: inline-block;
     vertical-align: bottom;
     margin: 5px;
+  }
+
+  input:where([type="radio"]) {
+    appearance: none;
     width: 10%;
+    border: 1px solid #41D395;
+    border-radius: 4px;
+    background: #fff no-repeat center center;
+    --padding: 2px;
+  }
+
+  input[type="radio"] {
+    border-radius: 50%;
+  }
+
+  input:where([type="radio"]):where(:active:not(:disabled), :focus) {
+    border-color: #41D395;
+    outline: none;
+    background: #41D395 no-repeat center center;
+    box-shadow: inset 0 0 0 var(--padding) white;
+  }
+
+  .radio-labels {
+    font-size: x-small;
+    text-transform: uppercase;
+    font-weight: 900;
   }
 }
 
@@ -222,20 +249,68 @@ header {
 .section-3 {
   display: flex;
   background-size: 100% 100%;
-  background: linear-gradient(270deg, 
-  rgba(102, 150, 226, 0.6), 
-  rgba(226, 120, 102, 0.6)) , url(/images/png/mountains.png);
-  background-size:cover;
+  background: linear-gradient(270deg,
+      rgba(102, 150, 226, 0.6),
+      rgba(226, 120, 102, 0.6)), url(/images/png/mountains.png);
+  background-size: cover;
   width: 1400px;
   height: 595px;
 
   .explore {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-content: center;
-   justify-content: center;
-   margin-right: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-right: 0px;
+  }
+
+  .overlay-container {
+    width: 168px;
+    height: 168px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overlay-container-streched {
+    width: 335px;
+    height: 175px;
+    position: relative;
+    overflow: hidden;
+  }
+
+// Overlay
+
+  .overlay {
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    background: rgba(226, 120, 102, 0.7);
+  }
+
+  .text {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    transition: translate(-50%, -50%);
+  }
+
+  .overlay-container:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay-container-streched:hover .overlay {
+    opacity: 1;
+  }
+
+  .overlay-fade {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
   }
 
   #img1 {
@@ -256,7 +331,7 @@ header {
   .features {
     color: white;
     margin-top: 185px;
-    margin-left: 270px;
+    margin-left: 395px;
     width: 557px;
     height: 190px;
   }
@@ -276,6 +351,11 @@ header {
   background: #1C1C1C;
   width: 1400px;
   height: 596px;
+
+  .rename-later{
+    width: 50%;
+    height: 30%;
+  }
 
   .logo img {
     margin-top: 213px;
@@ -310,4 +390,123 @@ header {
     letter-spacing: 0px;
     font-weight: 300;
   }
+
+  .eyeicon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 185px;
+    color: white;
+    width: 27px;
+    height: 18px;
+
+    .orangeye {
+      background: #E27866;
+      border-radius: 100%;
+      padding: 20px;
+      width: 50px;
+      height: 50px;
+    }
+
+  }
+
+  .title-1 {
+    display: flex;
+
+    h4 {
+      margin-top: 10px;
+      width: 30px;
+      height: 18px;
+      margin-left: 30px;
+    }
+
+    p {
+      margin-left: -30px;
+      margin-top: 35px;
+      width: 394px;
+      height: 38px;
+    }
+  }
+
+  .chatbubble {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 185px;
+    color: white;
+    width: 27px;
+    height: 18px;
+
+    .orangebubble {
+      background: #E27866;
+      border-radius: 100%;
+      padding: 20px;
+      width: 50px;
+      height: 50px;
+    }
+
+    .title-2 {
+      display: flex;
+  
+      h4 {
+        margin-top: 10px;
+        width: 30px;
+        height: 18px;
+        margin-left: 30px;
+      }
+  
+      p {
+        margin-left: -30px;
+        margin-top: 35px;
+        width: 394px;
+        height: 38px;
+      }
+    }
+  }
+}
+
+.section-5 {
+  background: #FFFFFF;
+  width: 1400px;
+  height: 592px;
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 99px;
+    font: normal normal 600 36px/43px Montserrat;
+    color: #212121;
+    font-weight: 900;
+  }
+
+  img {
+    margin-top: 30px;
+    margin-left: 669px;
+    width: 64px;
+    height: 2px;
+  }
+
+  p {
+    color: #86878B;
+    font: normal normal normal 14px/20px Montserrat;
+    margin-top: 30px;
+    margin-left: 506px;
+    width: 390px;
+    height: 18px;
+  }
+
+  .elipse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-top: 110px;
+  }
+
 }
