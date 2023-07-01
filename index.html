@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam page</title>
     <link rel="icon" type="image/x-icon" href="app/images/gulp.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -84,8 +85,13 @@
       </section>
 
       <section class="section-3">
-        <div class="boxes">
-
+        <div class="tabs">
+          <button class="tablinks" id="rotate"
+            onclick="openCity(event, 'Register')"><span>REGISTER</span></button>
+          <button class="tablinks" id="rotate"
+            onclick="openCity(event, 'Apply')"><span>APPLY</span></button>
+          <button class="tablinks" id="rotate"
+            onclick="openCity(event, 'Receive')"><span>RECEIVE</span></button>
         </div>
 
         <div class="features">
@@ -142,10 +148,11 @@
           <h2>Erat tempor tempus erat malesuada</h2>
           <img src="images/png/orangediv.png" alt>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan
             et viverra justo commodo.</p>
         </div>
-  
+
         <div class="eyeicon">
           <div class="orangeye">
             <i class="fa-solid fa-eye"></i>
@@ -156,7 +163,7 @@
               euismod bibendum laoreet.</p>
           </div>
         </div>
-  
+
         <div class="chatbubble">
           <div class="orangebubble">
             <i class="fa-regular fa-comment"></i>
@@ -164,7 +171,8 @@
           <div class="title-2">
             <h4>Title</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan
+              euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+              accumsan
               et viverra justo commodo.</p>
           </div>
         </div>
@@ -187,7 +195,7 @@
 
         <div class="icon-2">
           <div class="boarder">
-            <i class="fa-solid fa-award"></i>
+            <i class="fa-solid fa-spa"></i>
           </div>
           <h2>Well Crafted</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Aenean
@@ -203,5 +211,151 @@
         </div>
       </div>
     </section>
+
+    <section class="section-6">
+      <div class="pricing">
+        <h1>PRICING OPTIONS</h1>
+        <img src="/images/svg/divider_orange_u7 copy (4).svg" alt>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="options">
+        <div class="box-normal">
+          <div class="black">
+            <div class="cont">
+              <h1>Basic</h1>
+              <h2><span>$</span>0</h2>
+              <p>Free for life</p>
+            </div>
+          </div>
+          <div class="green"></div>
+          <div class="white">
+            <div class="cont">
+              <ul>
+                <li>1 GB O SPACE</li>
+                <li>10 GP O BANDWITH</li>
+                <li>3 WEBSITES</li>
+                <li>BASIC CUSTOMIZATION</li>
+                <li>WORDPRESS INTEGRATION</li>
+                <li>EMAIL SUPPORT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-long">
+          <div class="black">
+            <div class="cont">
+              <h1>Professional</h1>
+              <h2><span>$</span>19</h2>
+              <p>Monthly payment</p>
+            </div>
+          </div>
+          <div class="green"><p>OUR MOST POPULAR</p></div>
+          <div class="white">
+            <div class="cont">
+              <ul>
+                <li>5 GB OF SPACE</li>
+                <li>50 GB OF BANDWIDTH</li>
+                <li>12 WEBSITES</li>
+                <li>ADVANCED CUSTOMIZATION</li>
+                <li>WORDPRESS INTEGRATION</li>
+                <li>EMAIL SUPPORT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-normal">
+          <div class="black">
+            <div class="cont">
+              <h1>Enterprise</h1>
+              <h2><span>$</span>70</h2>
+              <p>Monthly payment</p>
+            </div>
+          </div>
+          <div class="green"></div>
+          <div class="white">
+            <div class="cont">
+              <ul>
+                <li>UNLIMITED SPACE</li>
+                <li>UNLIMITED BANDWITH</li>
+                <li>100 WEBSITES</li>
+                <li>ADVANCED CUSTOMIZATION</li>
+                <li>WORDPRESS INTEGRATION</li>
+                <li>24/7 CUSTOMER SUPPORT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-7">
+      <div class="customers">      
+        <h1>WHAT OUR CUSTOMERS ARE SAYING</h1>
+        <img src="" alt="">
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-1">Slide 1</div>
+          <div class="swiper-slide slide-2">Slide 2</div>
+          <div class="swiper-slide slide-3">Slide 3</div>
+          <div class="swiper-slide slide-4">Slide 4</div>
+          <div class="swiper-slide slide-5">Slide 5</div>
+          <div class="swiper-slide slide-6">Slide 6</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="section-8">
+    <div class="form-2">
+      <div class="contacts">
+        <h1>CONTACT US</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="input-1">
+        <input type="name" name="name" placeholder="First name"
+        autocomplete="off">
+        <input type="lastname" name="lastname" placeholder="Last name"
+        autocomplete="off">
+        <input type="phone" name="phone" placeholder="Phone number"
+        autocomplete="off">
+
+        <div class="radio-field">
+          <label for="personal" class="radio-labels">
+            <input type="radio" name="personal" id="personal" class="radio-btn" />Personal</label>
+          <label for="company" class="radio-labels">
+            <input type="radio" name="company" id="company" class="radio-btn" />Company</label>
+        </div>
+
+        <button class="button-3" type="button">SEND</button
+
+      </div>
+    </div>
+    </section>
+
+    <footer>
+      <div class="socials">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest-p"></i>
+        <i class="fa-solid fa-rss"></i>
+      </div>
+
+      <div class="copyright">
+        <p>© 2019 Cheshire County</p>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"> </script>
+    <script src="swiper.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
