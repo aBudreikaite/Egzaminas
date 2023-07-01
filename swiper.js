@@ -1,24 +1,20 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
-    autoplay: {
-        delay: 200,
-        pauseOnMouseEnter: true,
-        disableOnInteraction: false
-    },
+    slidesPerGroup: 3,
+    slidesPerView: 3,
+    loop: false,
+    // autoplay: {
+    //     delay: 1000,
+    //     pauseOnMouseEnter: true,
+    //     disableOnInteraction: false
+    // },
   
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-
+    disabledClass: 'disabled_swiper_button',
     breakpoints: {
         600: {
             slidesPerView: 2,
@@ -27,6 +23,7 @@ const swiper = new Swiper('.swiper', {
         },
         1000: {
             slidesPerView: 3,
+            slidesPerGroup: 3,
             spaceBetween: 40
         }
     }
