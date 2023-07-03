@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    #burger {
+        display: block;
+        background-color: $coral;
+    }
+
+    .navigation {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        background: black;
+        width: 100%;
+        height: 215px;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-440px);
+        z-index: -1;
+        /* padding: 30px; */
+    }
+
+    .navigation a{
+        height: 30px;
+    }
+
+    .navigation.translate {
+        transform: translateY(0px);
+        transition: 0.3s;
+    }
+    header nav .nav-container .navigation{
+        gap: 0px;
+    }
+}

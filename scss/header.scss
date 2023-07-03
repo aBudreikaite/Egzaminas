@@ -1,0 +1,66 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  opacity: 1;
+  z-index: 9;
+
+  nav {
+    background: $nav 0% 0% no-repeat padding-box;
+    width: 100%;
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 80%;
+      gap: 600px;
+      margin: auto;
+
+
+      img {
+        width: 119px;
+        height: 52px;
+      }
+
+      .navigation {
+        overflow: none;
+        display: flex;
+        gap: 30px;
+
+        #burger {
+          display: none;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+
+        #burger.rotate {
+          transform: rotate(-90deg);
+        }
+      }
+
+      .navigation a {
+        text-decoration: none;
+        border-bottom: 3px solid black;
+        padding: 20px;
+        letter-spacing: 0px;
+        color: rgb(159, 157, 157);
+        text-align: right;
+        opacity: 1;
+      }
+
+      .navigation a:hover {
+        border-bottom: 3px solid $coral;
+      }
+
+      .navigation a.active {
+        border-bottom: 3px solid $coral;
+        color: white;
+        transition: 0.2s;
+      }
+    }
+  }
+}

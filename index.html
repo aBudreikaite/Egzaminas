@@ -15,17 +15,20 @@
   </head>
   <body>
     <header>
-      <div>
-        <img src="/images/svg/cheshire-county-hygiene-services.svg" alt>
-      </div>
+      <nav>
+        <div class="nav-container">
+          <img src="/images/svg/cheshire-county-hygiene-services.svg" alt>
 
-      <div class="navigation">
-        <a href="#section-5">Features</a>
-        <a href="#section-4">About</a>
-        <a href="#section-6">Pricing</a>
-        <a href="#section-7">Reviews</a>
-        <a href="#section-8">Contact</a>
-      </div>
+          <div class="navigation" id="navigation">
+            <a href="#section-5">Features</a>
+            <a href="#section-4">About</a>
+            <a href="#section-6">Pricing</a>
+            <a href="#section-7">Reviews</a>
+            <a href="#section-8">Contact</a>
+          </div>
+          <i id="burger" class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
     </header>
 
     <section class="section-1">
@@ -73,9 +76,9 @@
 
         <button class="button-2" type="button">Get started</button>
         </div>
-      </section>
+    </section>
 
-      <section class="section-2">
+    <section class="section-2">
         <div>
           <h2>Social Media</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -89,19 +92,43 @@
           <i class="fa-brands fa-pinterest-p"></i>
           <i class="fa-solid fa-rss"></i>
         </div>
-      </section>
+    </section>
 
-      <section class="section-3">
+    <section class="section-3">
         <div class="tabs">
-          <button class="tablinks" id="rotate"
-            onclick="openCity(event, 'Register')"><span>REGISTER</span></button>
-          <button class="tablinks" id="rotate"
-            onclick="openCity(event, 'Apply')"><span>APPLY</span></button>
-          <button class="tablinks" id="rotate"
-            onclick="openCity(event, 'Receive')"><span>RECEIVE</span></button>
+          <button class="tablinks" id="defaultOpen"
+            onclick="openTab(event, 'Register')"><span>REGISTER</span></button>
+          <button class="tablinks"
+            onclick="openTab(event, 'Apply')"><span>APPLY</span></button>
+          <button class="tablinks"
+            onclick="openTab(event, 'Receive')"><span>RECEIVE</span></button>
         </div>
 
-        <div class="features">
+        <div class="features" id="Register">
+          <h1>Tabs with soft transitioning effect. Explained propriety of out
+            perpetual his you.</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+            accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+            Cum sociis natoque penatibus et magnis dis parturient montes.
+            <br> <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet.
+          </p>
+        </div>
+
+        <div class="features" id="Apply">
+          <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ultricies lacus sed turpis tincidunt.
+            <br> <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+            euismod bibendum laoreet.
+          </p>
+        </div>
+
+        <div class="features" id="Receive">
           <h1>Tabs with soft transitioning effect. Explained propriety of out
             perpetual his you.</h1>
           <p>
@@ -117,7 +144,7 @@
 
         <div class="explore">
           <div class="overlay-container">
-            <img id="img1" src="/images/png/leaves.png" alt>
+            <img id="img1" src="/images/png/tab-image1.png" alt>
             <div class="overlay overlay-fade">
               <div class="text">
                 Explore
@@ -125,7 +152,7 @@
             </div>
           </div>
           <div class="overlay-container">
-            <img id="img2" src="/images/png/salad.png" alt>
+            <img id="img2" src="/images/png/tab-image2.png" alt>
             <div class="overlay overlay-fade">
               <div class="text">
                 Explore
@@ -133,7 +160,7 @@
             </div>
           </div>
           <div class="overlay-container-streched">
-            <img id="img3" src="/images/png/shoes.png" alt>
+            <img id="img3" src="/images/png/tab-image3.png" alt>
             <div class="overlay overlay-fade">
               <div class="text">
                 Explore

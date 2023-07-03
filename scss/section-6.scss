@@ -1,0 +1,139 @@
+.section-6 {
+    background: #6696E2;
+    width: 100%;
+    height: 883px;
+  
+    .pricing {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+  
+      h1 {
+        margin-top: 97px;
+        font-size: 2em;
+        font-weight: 900;
+      }
+  
+      img {
+        margin-top: 20px;
+      }
+  
+      p {
+        margin-top: 20px;
+        font: normal normal normal 14px/20px Montserrat;
+      }
+    }
+  
+    .options {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: flex-end;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      width: 100%;
+      height: auto;
+      gap: 80px;
+      margin-top: 80px;
+  
+      .cont {
+  
+        padding: 1px;
+      }
+  
+      .black {
+        align-items: center;
+        background-color: #333333;
+        color: white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 220px;
+  
+        h1 {
+          text-align: center;
+          font: normal normal normal 20px/24px Montserrat;
+        }
+  
+        h2 {
+          font-size: 5em;
+          font-weight: 500;
+          text-align: center;
+          margin-top: 21px;
+        }
+  
+        p {
+          text-align: center;
+          color: #86878B;
+          margin-top: 21px;
+          font: normal normal normal 14px/24px Montserrat;
+        }
+      }
+  
+      .white {
+        margin-top: 0px;
+        background: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        height: 100%;
+      }
+  
+      .box-normal {
+        transition: box-shadow .3s, transform .3s;
+        width: 20%;
+        height: 100%;
+  
+        .green {
+          background-color: $green;
+          font-size: medium;
+          color: white;
+          height: 5px;
+        }
+      }
+  
+      .box-normal:hover {
+        border: $green 3px solid;
+        box-shadow: 0 0 11px rgba(33,33,33,.6);
+        transform: translateY(-20px);
+      }
+  
+      .box-long {
+        transition: box-shadow .3s, transform .3s;
+        width: 20%;
+        margin-bottom: 0px;
+  
+        .green {
+          background-color: $green;
+          font: normal normal normal 14px/24px Montserrat;
+          color: white;
+          text-align: center;
+          height: 40px;
+  
+          p {
+            padding: 5px;
+          }
+        }
+      }
+      .box-long:hover {
+        border: $green 3px solid;
+        box-shadow: 0 0 11px rgba(33,33,33,.6);
+        transform: translateY(-20px);
+      }
+  
+      h2 span {
+        font-size: 0.5em;
+        font-weight: 300;
+      }
+  
+      li {
+        list-style: none;
+        text-align: center;
+        font-weight: 600;
+        margin: 20px;
+        padding: 1px;
+        color: #86878B;
+        font: normal normal normal 14px/24px Montserrat;
+      }
+    }
+  }

@@ -1,0 +1,33 @@
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 105px;
+  
+    h2 {
+      margin-top: 10px;
+      margin-left: 150px;
+      width: 200px;
+      height: 24px;
+    }
+  
+    p {
+      margin-top: 10px;
+      margin-left: 150px;
+      width: 420px;
+    }
+  
+    .icons {
+      margin-top: 40px;
+      width: 600px;
+      height: 30px;
+      color: $coral;
+      opacity: 0.65;
+    }
+  
+    .icons i {
+      font-size: 32px;
+      width: 100px;
+      height: 50px;
+    }
+  }
