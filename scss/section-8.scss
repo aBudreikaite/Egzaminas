@@ -1,41 +1,40 @@
 .section-8 {
-    background: $coral;
-    width: 100%;
-    height: 573px;
-  
-    .form-2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-  
+  background: $coral;
+  width: 100%;
+  height: 573px;
+
+  .form-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
     .contacts {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-  
+
       h1 {
         margin-top: 70px;
         color: #ffffff;
         font: normal normal 600 36px/43px Montserrat;
       }
-  
+
       p {
         margin-top: 50px;
         color: #ffffff;
         font: normal normal normal 14px/20px Montserrat;
       }
     }
-  
+
     .input-1 {
       margin-top: 20px;
       background: white;
       width: 390px;
       height: 314px;
       border-radius: 5px;
-  
+
       input {
         display: flex;
         flex-direction: column;
@@ -50,7 +49,7 @@
         width: 250px;
         margin-bottom: 10px;
       }
-  
+
       .button-3 {
         background: $green;
         border: none;
@@ -64,23 +63,23 @@
         margin-left: 116px;
         cursor: pointer;
       }
-  
+
       .radio-field {
-        margin: 10px 45px 20px 45px;
-  
+        margin: 20px 45px 20px 45px;
+    
         .h3-sub {
           margin-left: 10px;
           margin-bottom: 20px;
         }
       }
-  
+    
       .radio-field ul {
         list-style: none;
         margin: 0;
         padding: 0;
         overflow: none;
       }
-  
+    
       ul li {
         color: #000;
         font-weight: lighter;
@@ -89,12 +88,12 @@
         float: left;
         width: 50%;
       }
-  
+    
       ul li input[type=radio] {
         position: absolute;
         visibility: hidden;
       }
-  
+    
       ul li label {
         display: inline;
         position: relative;
@@ -106,11 +105,11 @@
         cursor: pointer;
         -webkit-transition: all 0.25s linear;
       }
-  
+    
       ul li:hover label {
         color: $blue;
       }
-  
+    
       ul li .check {
         display: block;
         position: absolute;
@@ -124,11 +123,11 @@
         transition: border .25s linear;
         -webkit-transition: border .25s linear;
       }
-  
+    
       ul li:hover .check {
         border: 2px solid $blue;
       }
-  
+    
       ul li .check::before {
         display: block;
         position: absolute;
@@ -142,18 +141,19 @@
         transition: 0.25s linear;
         -webkit-transition: 0.25s linear;
       }
-  
+    
       input[type=radio]:checked~.check {
         border: 2px solid $green;
       }
-  
+    
       input[type=radio]:checked~.check::before {
         background: $green;
       }
-  
+    
       input[type=radio]:checked~label {
         color: black;
         font-weight: 500;
       }
     }
   }
+}

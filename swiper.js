@@ -16,16 +16,42 @@ const swiper = new Swiper('.swiper', {
     },
     disabledClass: 'disabled_swiper_button',
     breakpoints: {
+        10: {
+            direction: "vertical",
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
         600: {
+            direction: "horizontal",
             slidesPerView: 2,
             slidesPerGroup: 2,
             loop: false,
         },
-        1000: {
+        1024: {
+            direction: "horizontal",
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 30
+        },
+        1440:{
+            direction: "horizontal",
             slidesPerView: 3,
             slidesPerGroup: 3,
-            spaceBetween: 40
+            spaceBetween: 30
+        },
+        1920:{
+            direction: "horizontal",
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 30
+        },
+        2560:{
+            direction: "horizontal",
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: 30
         }
+        
     }
   
   });

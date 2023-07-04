@@ -1,32 +1,308 @@
-@media (max-width: 768px) {
-    #burger {
-        display: block;
-        background-color: $coral;
-    }
+@media only screen and (max-width: 768px) {
 
-    .navigation {
-        position: absolute;
-        left: 0;
-        top: 50px;
-        background: black;
+    html,
+    body {
         width: 100%;
-        height: 215px;
-        align-items: center;
-        flex-direction: column;
-        transform: translateY(-440px);
-        z-index: -1;
-        /* padding: 30px; */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
     }
 
-    .navigation a{
-        height: 30px;
+    header {
+        #burger {
+            display: block;
+            background-color: $coral;
+        }
+
+        nav .nav-container {
+            margin: 0px;
+            width: 100%;
+            gap: 500px;
+
+            .navigation {
+                position: absolute;
+                left: 0;
+                top: 50px;
+                background: black;
+                width: 100%;
+                height: 215px;
+                align-items: center;
+                flex-direction: column;
+                transform: translateY(-440px);
+                z-index: -1;
+                /* padding: 30px; */
+            }
+
+            .navigation a {
+                height: 30px;
+            }
+
+            .navigation.translate {
+                transform: translateY(0px);
+                transition: 0.3s;
+            }
+
+            .navigation {
+                gap: 0px;
+            }
+        }
     }
 
-    .navigation.translate {
-        transform: translateY(0px);
-        transition: 0.3s;
+    .section-1 {
+        .container-text {
+            margin-left: 10px;
+            width: 50%;
+
+            img {
+                margin-right: 0px;
+                height: 100px;
+            }
+
+            h1 {
+                height: 30px;
+                font-size: medium;
+            }
+
+            .divider {
+                height: 20px;
+            }
+
+            p {
+                font-size: small;
+                width: 350px;
+            }
+        }
     }
-    header nav .nav-container .navigation{
+
+    .form {
+        width: 300px;
+        height: 370px;
+
+        input{
+            margin-left: 40px;
+            width: 230px;
+        }
+        .button-2 {
+            width: 300px;
+        }
+    }
+
+    .section-2 {
         gap: 0px;
+
+        .text-container {
+            width: 300px;
+            margin: 0px 10px 0px 10px;
+
+            h2 {
+                font-size: medium;
+            }
+
+            p {
+                width: 300px;
+                font-size: small;
+            }
+        }
+    }
+
+    .section-3 {
+        .features {
+            margin-top: 150px;
+
+            h1 {
+                font-size: medium;
+            }
+
+            p {
+                font-size: small;
+            }
+        }
+
+        .explore {
+            width: 500px;
+
+            .overlay-container {
+                width: 128px;
+                height: 128px;
+            }
+
+            .overlay-container-streched {
+                width: 268px;
+                height: 128px;
+            }
+
+            img {
+                width: 128px;
+                height: 128px;
+            }
+
+            .img3 {
+                width: 256px;
+                height: 128px;
+            }
+        }
+    }
+
+    .section-4 {
+        .container {
+            width: 100%;
+
+            .logo {
+                width: 50%;
+
+                img {
+                    width: 300px;
+                    margin: 180px 20px 0px 20px;
+                }
+            }
+
+            .rename-later2 {
+                width: 50%;
+
+                .rename-later {
+                    width: 450px;
+
+                    h2 {
+                        width: 450px;
+                        margin-left: 0px;
+                    }
+
+                    img {
+                        margin-left: 0px;
+                    }
+
+                    p {
+                        width: 400px;
+                        margin-left: 0px;
+                    }
+                }
+
+                .eyeicon {
+                    width: 300px;
+                    margin-left: 0px;
+
+                    .title-1 {
+                        p {
+                            width: 250px;
+                        }
+                    }
+                }
+
+                .chatbubble {
+                    width: 300px;
+                    margin-left: 0px;
+                    margin-top: 100px;
+
+                    .title-2 {
+                        p {
+                            width: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .section-5 {
+        .elipse {
+            justify-content: space-between;
+            margin-left: 0px;
+            margin-right: 0px;
+            width: 500px;
+            gap: 0px;
+
+            .icon-1 {
+                width: 250px;
+            }
+
+            .icon-2 {
+                width: 250px;
+            }
+
+            .icon-3 {
+                width: 250px;
+            }
+        }
+    }
+
+    .section-6 {
+        height: 760px;
+
+        .options {
+            .box-normal {
+                width: 100%;
+
+                .black {
+                    height: 70%;
+
+                    .cont {
+                        h1 {
+                            font-size: medium;
+                        }
+
+                        h2 {
+                            font-size: 3em;
+                        }
+                    }
+                }
+
+                .white {
+                    .cont {
+                        ul {
+                            li {
+                                margin: 4px;
+                                font-size: smaller;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .box-long {
+                width: 100%;
+                height: 70%;
+
+                .black {
+                    height: 90%;
+
+                    .cont {
+                        h1 {
+                            font-size: medium;
+                        }
+
+                        h2 {
+                            font-size: 3em;
+                        }
+                    }
+                }
+
+                .white {
+                    .cont {
+                        ul {
+                            li {
+                                margin: 4px;
+                                font-size: smaller;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .socials {
+            margin-left: 100px;
+
+            i {
+                margin: 5px 15px 5px 15px;
+            }
+        }
+
+        .copyright {
+            margin-right: 20px;
+            width: 400px;
+        }
     }
 }
